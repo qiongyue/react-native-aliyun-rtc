@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chart_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ 
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black_alpha_5">
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:orientation="vertical">
+
+        <org.webrtc.sdk.SophonSurfaceView
+            android:id="@+id/sf_local_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    
+    <!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chart_content_userlist"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="32dp" />
+    -->
+
+     <com.qiongyue.view.CustomRecyclerView
+        android:id="@+id/chart_content_userlist"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="64dp" />
+
+  
+
+</RelativeLayout>
